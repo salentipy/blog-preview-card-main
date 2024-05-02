@@ -1,0 +1,74 @@
+:root {
+
+--yellow: hsl(47, 88%, 63%);
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 50%);
+--black: hsl(0, 0%, 7%);
+
+--sans-serif: "Figtree", Arial, sans-serif;
+
+--base-size: 1rem;
+--scale: 1.25;
+--h1: calc(var(--h2) * var(--scale));
+--h2: calc(var(--h3) * var(--scale));
+--h3: calc(var(--h4) * var(--scale));
+--h4: calc(var(--h5) * var(--scale));
+--h5: calc(var(--h6) * var(--scale));
+--h6: var(--base-size);
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+html {
+box-sizing: inherit;
+}
+body{
+    background-color: var(--yellow);
+    color: var(--black);
+    font-family: var(--sans-serif);
+}
+h1 {
+    border-radius: 10px;
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: .5rem 1rem .5rem 1rem;
+    font-weight: 800;
+}
+h2 {
+    font-weight: 800;
+}
+figure {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+figcaption {
+    margin-left: 1rem;
+    font-weight: 800;
+}
+.container {
+    background-color: var(--white);
+    width: 400px;
+    padding: 1.5rem;
+    margin: 7rem auto 7rem auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px var(--black);
+}
+.container svg {
+    border-radius: 10px;
+}
+.container a {
+    color: var(--black);
+    text-decoration: none;
+}
+.container a:hover {
+    color: var(--yellow);
+}
+.bold {
+    font-weight: 800;
+}
