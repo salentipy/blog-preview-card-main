@@ -30,6 +30,7 @@ body{
     background-color: var(--yellow);
     color: var(--black);
     font-family: var(--sans-serif);
+    text-align: center;
 }
 h1 {
     border-radius: 10px;
@@ -41,21 +42,32 @@ h1 {
 h2 {
     font-weight: 800;
 }
+p {
+    margin: 0;
+}
 figure {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
 }
 figcaption {
     margin-left: 1rem;
     font-weight: 800;
+}
+article {
+    text-align: left;
+}
+figure img {
+    margin: 0;
 }
 .container {
     background-color: var(--white);
     width: 400px;
     padding: 1.5rem;
     margin: 7rem auto 7rem auto;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid black;
     box-shadow: 10px 10px var(--black);
 }
@@ -69,6 +81,6 @@ figcaption {
 .container a:hover {
     color: var(--yellow);
 }
-.bold {
-    font-weight: 800;
+.content {
+    color: var(--grey);
 }
